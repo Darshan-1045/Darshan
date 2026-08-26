@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+	font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+	color: #17212b;
+	background: #f4f1ea;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
