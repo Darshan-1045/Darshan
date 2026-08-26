@@ -49,8 +49,8 @@ function Hero() {
 
             {/* Download Resume */}
             <a
-              href="/DarshanP_resume_SDE.pdf"
-              download="DarshanP_resume_SDE.pdf"
+              href="/DarshanP_Resume_SDE.pdf"
+              download="DarshanP_Resume_SDE.pdf"
               className="inline-flex items-center justify-center rounded-xl border border-[#f0b7ca] bg-white px-7 py-3.5 text-sm font-bold text-[#e92f72] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#fff5f8] hover:shadow-lg"
             >
               Download Resume
