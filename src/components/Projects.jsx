@@ -1,10 +1,45 @@
 import airbnbImage from "../assets/Airbnb.png";
+import careerPilotImage from "../assets/careerpilot-ai-dashboard.png";
 import dashboardImage from "../assets/Dashboard.png";
 import foreverImage from "../assets/Forever.png";
 import smartTaskImage from "../assets/Smarttask.png";
 
 function Projects() {
   const projects = [
+    {
+      title: "CareerPilot-AI",
+      category: "AI-Powered Career Assistance Platform",
+      image: careerPilotImage,
+      imageAlt:
+        "CareerPilot-AI dashboard showing the career workspace and navigation",
+      imageAspect: "aspect-video",
+      description:
+        "CareerPilot-AI is a full-stack, AI-powered career assistance platform designed to help users manage their career profiles, explore job opportunities, track job applications, and receive AI-powered career guidance in one place.",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "MySQL",
+        "SQLAlchemy",
+        "JWT Authentication",
+        "Groq API",
+      ],
+      features: [
+        "JWT User Registration & Login",
+        "Career Profile Management",
+        "Job Exploration Interface",
+        "Application Tracking & Status Management",
+        "AI Career Assistance with Groq",
+        "Persistent AI Conversations & Chat History",
+        "Responsive UI with Light & Dark Themes",
+      ],
+      plannedEnhancement:
+        "Planned enhancement: Integrate an external job-listings API to expand job discovery and improve the availability of job opportunities.",
+      github: "https://lnkd.in/gtEkP6ez",
+      githubLabel: "GitHub Repository",
+      live: "https://careerpilot-ai-frontend-steel.vercel.app/",
+    },
     {
       title: "MERN E-Commerce Platform",
       image: foreverImage,
@@ -130,16 +165,18 @@ function Projects() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-2xl border border-[#eee8ee] bg-white shadow-[0_8px_30px_rgba(51,31,64,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_18px_45px_rgba(51,31,64,0.13)]"
+              className="group overflow-hidden rounded-2xl border border-[#eee8ee] bg-white shadow-[0_8px_24px_rgba(51,31,64,0.06)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(51,31,64,0.1)]"
             >
 
               {/* Project Image */}
-              <div className="relative h-56 overflow-hidden bg-[#f5edff]">
+              <div
+                className={`relative ${project.imageAspect ?? "h-56"} overflow-hidden bg-[#f5edff]`}
+              >
 
                 <img
                   src={project.image}
-                  alt={`${project.title} screenshot`}
-                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  alt={project.imageAlt ?? `${project.title} screenshot`}
+                  className={`h-full w-full ${project.imageFit ?? "object-cover"} object-center transition-transform duration-500 group-hover:scale-105`}
                 />
 
                 {/* Image Overlay */}
@@ -153,6 +190,12 @@ function Projects() {
                 <h3 className="text-xl font-bold leading-snug text-[#17203b] transition-colors duration-300 group-hover:text-[#e92f72]">
                   {project.title}
                 </h3>
+
+                {project.category && (
+                  <p className="mt-2 text-xs font-bold uppercase tracking-[1px] text-[#7b3fc6]">
+                    {project.category}
+                  </p>
+                )}
 
                 <p className="mt-3 text-sm leading-7 text-[#4d536b]">
                   {project.description}
@@ -178,6 +221,12 @@ function Projects() {
                   </ul>
                 </div>
 
+                {project.plannedEnhancement && (
+                  <p className="mt-5 rounded-lg border border-[#f3dce6] bg-[#fff5f8] p-3 text-xs leading-5 text-[#5f6680]">
+                    {project.plannedEnhancement}
+                  </p>
+                )}
+
                 {/* Technologies */}
                 <div className="mt-6 border-t border-[#eee8ee] pt-5">
                   <div className="flex flex-wrap gap-2">
@@ -198,17 +247,17 @@ function Projects() {
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center rounded-lg bg-[#17203b] px-4 py-2.5 text-xs font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#252e4c]"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-lg bg-[#17203b] px-4 py-2.5 text-xs font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#252e4c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e92f72] focus-visible:ring-offset-2"
                   >
-                    GitHub →
+                    {project.githubLabel ?? "GitHub"} →
                   </a>
 
                   <a
                     href={project.live}
                     target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center rounded-lg bg-gradient-to-r from-[#7b3fc6] via-[#e92f72] to-[#ff725c] px-4 py-2.5 text-xs font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-lg bg-gradient-to-r from-[#7b3fc6] via-[#e92f72] to-[#ff725c] px-4 py-2.5 text-xs font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e92f72] focus-visible:ring-offset-2"
                   >
                     Live Demo →
                   </a>

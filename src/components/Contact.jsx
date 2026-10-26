@@ -2,7 +2,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="w-full bg-[#fffafb] px-6 py-20 md:px-10"
+      className="w-full bg-[#faf7fb] px-6 py-20 md:px-10"
     >
       <div className="mx-auto max-w-6xl">
 
@@ -59,8 +59,8 @@ function Contact() {
             <a
               href="https://www.linkedin.com/in/Darshan-prakasha/"
               target="_blank"
-              rel="noreferrer"
-              className="text-sm font-semibold text-[#17203b] transition-colors duration-300 hover:text-[#e92f72]"
+              rel="noopener noreferrer"
+              className="break-words text-sm font-semibold text-[#17203b] transition-colors duration-200 hover:text-[#e92f72]"
             >
               LinkedIn Profile
             </a>
@@ -79,8 +79,8 @@ function Contact() {
             <a
               href="https://github.com/Darshan-1045"
               target="_blank"
-              rel="noreferrer"
-              className="text-sm font-semibold text-[#17203b] transition-colors duration-300 hover:text-[#7b3fc6]"
+              rel="noopener noreferrer"
+              className="break-words text-sm font-semibold text-[#17203b] transition-colors duration-200 hover:text-[#7b3fc6]"
             >
               GitHub Profile
             </a>

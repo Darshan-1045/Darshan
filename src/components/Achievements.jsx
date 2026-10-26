@@ -37,7 +37,7 @@ function Achievements() {
           {achievements.map((achievement) => (
             <article
               key={achievement.title}
-              className="group relative overflow-hidden rounded-2xl border border-[#eee8ee] bg-white p-7 shadow-[0_8px_30px_rgba(51,31,64,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(51,31,64,0.13)]"
+              className="group relative overflow-hidden rounded-2xl border border-[#eee8ee] bg-white p-7 shadow-[0_8px_24px_rgba(51,31,64,0.06)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(51,31,64,0.1)]"
             >
               {/* Gradient Top Border */}
               <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#7b3fc6] via-[#e92f72] to-[#ff9b5c]" />

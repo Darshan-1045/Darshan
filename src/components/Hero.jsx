@@ -25,15 +25,15 @@ function Hero() {
           </h1>
 
           <h2 className="mt-5 text-2xl font-bold leading-tight text-[#17203b] sm:text-3xl lg:text-4xl">
-            Software Engineer
-            <span className="text-[#e92f72]"> | </span>
             Full Stack Developer
+            <span className="text-[#e92f72]"> | </span>
+            Software Developer
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#4d536b] lg:mx-0">
-            I build full-stack web applications using React, Node.js,
-            Express.js, and MongoDB, with a focus on creating reliable
-            and user-friendly solutions.
+            I build responsive web applications across frontend and backend
+            development, bringing hands-on project experience with React,
+            JavaScript, Node.js, Python, and REST APIs.
           </p>
 
           {/* Buttons */}
@@ -42,7 +42,7 @@ function Hero() {
             {/* View Projects */}
             <a
               href="#projects"
-              className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#7b3fc6] via-[#e92f72] to-[#ff725c] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#e92f72]/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl bg-gradient-to-r from-[#7b3fc6] via-[#e92f72] to-[#ff725c] px-7 py-3.5 text-sm font-bold text-white shadow-md shadow-[#e92f72]/15 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
             >
               View Projects
             </a>
@@ -51,7 +51,7 @@ function Hero() {
             <a
               href="/DarshanP_Resume_SDE.pdf"
               download="DarshanP_Resume_SDE.pdf"
-              className="inline-flex items-center justify-center rounded-xl border border-[#f0b7ca] bg-white px-7 py-3.5 text-sm font-bold text-[#e92f72] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#fff5f8] hover:shadow-lg"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl border border-[#f0b7ca] bg-white px-7 py-3.5 text-sm font-bold text-[#e92f72] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#fff5f8] hover:shadow-md"
             >
               Download Resume
             </a>
@@ -59,7 +59,7 @@ function Hero() {
             {/* Contact */}
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-xl border border-[#f0b7ca] bg-white px-7 py-3.5 text-sm font-bold text-[#e92f72] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#fff5f8] hover:shadow-lg"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl border border-[#f0b7ca] bg-white px-7 py-3.5 text-sm font-bold text-[#e92f72] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#fff5f8] hover:shadow-md"
             >
               Contact Me
             </a>
@@ -67,9 +67,9 @@ function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="mt-10 flex flex-wrap justify-center gap-8 lg:justify-start">
+          <div className="mt-10 grid max-w-md grid-cols-3 divide-x divide-[#e7dfe7] rounded-2xl border border-[#eee8ee] bg-white/80 py-4 text-center shadow-sm lg:text-left">
 
-            <div>
+            <div className="px-2 sm:px-4">
               <p className="text-2xl font-extrabold text-[#17203b]">
                 75+
               </p>
@@ -78,9 +78,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className="h-10 w-px bg-[#e7dfe7]" />
-
-            <div>
+            <div className="px-2 sm:px-4">
               <p className="text-2xl font-extrabold text-[#17203b]">
                 MERN
               </p>
@@ -89,9 +87,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className="h-10 w-px bg-[#e7dfe7]" />
-
-            <div>
+            <div className="px-2 sm:px-4">
               <p className="text-2xl font-extrabold text-[#17203b]">
                 8.55
               </p>

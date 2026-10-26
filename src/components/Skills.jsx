@@ -3,13 +3,14 @@ function Skills() {
     {
       title: "Languages",
       icon: "💻",
-      skills: ["JavaScript (ES6+)", "C", "C++","Python", "Java Basics", "SQL"],
+      skills: ["JavaScript (ES6+)", "C", "C++", "Python", "Java Basics", "SQL"],
     },
     {
       title: "Frontend",
       icon: "🎨",
       skills: [
         "React.js",
+        "TypeScript",
         "HTML5",
         "CSS3",
         "Tailwind CSS",
@@ -17,14 +18,23 @@ function Skills() {
       ],
     },
     {
-      title: "Backend",
+      title: "Backend & APIs",
       icon: "⚙️",
       skills: [
         "Node.js",
         "Express.js",
+        "FastAPI",
         "REST API Design",
         "MVC Architecture",
+      ],
+    },
+    {
+      title: "Authentication & AI",
+      icon: "🔐",
+      skills: [
         "Authentication & Authorization",
+        "JWT Authentication",
+        "Groq API",
       ],
     },
     {
@@ -34,6 +44,7 @@ function Skills() {
         "MongoDB",
         "MongoDB Atlas",
         "MySQL",
+        "SQLAlchemy",
         "DBMS",
         "Schema Design",
       ],
@@ -94,7 +105,7 @@ function Skills() {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="group relative overflow-hidden rounded-2xl border border-[#eee8ee] bg-white p-6 shadow-[0_8px_30px_rgba(51,31,64,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_18px_45px_rgba(51,31,64,0.13)]"
+              className="group relative overflow-hidden rounded-2xl border border-[#eee8ee] bg-white p-6 shadow-[0_8px_24px_rgba(51,31,64,0.06)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(51,31,64,0.1)]"
             >
 
               {/* Gradient top border */}

@@ -2,7 +2,7 @@ function About() {
   return (
     <section
       id="about"
-      className="relative w-full overflow-hidden bg-[#fffafb] px-6 py-20 sm:px-10 lg:px-16 lg:py-24"
+      className="relative w-full overflow-hidden bg-[#faf7fb] px-6 py-20 sm:px-10 lg:px-16 lg:py-24"
     >
       {/* Decorative Background */}
       <div className="pointer-events-none absolute -right-32 top-10 h-72 w-72 rounded-full bg-[#ff9b5c]/10 blur-3xl" />
@@ -48,7 +48,7 @@ function About() {
           </div>
 
           {/* Statistics */}
-          <div className="mt-12 grid max-w-4xl grid-cols-1 overflow-hidden rounded-2xl border border-[#eee8ee] bg-white shadow-[0_8px_30px_rgba(51,31,64,0.07)] sm:grid-cols-3">
+          <div className="mt-10 grid max-w-4xl grid-cols-1 overflow-hidden rounded-2xl border border-[#eee8ee] bg-white shadow-[0_8px_30px_rgba(51,31,64,0.06)] sm:grid-cols-3">
 
             {/* CGPA */}
             <div className="relative p-6 sm:p-7">

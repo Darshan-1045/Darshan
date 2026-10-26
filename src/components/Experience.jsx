@@ -2,7 +2,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="w-full bg-[#fffafb] px-6 py-20 md:px-10"
+      className="w-full bg-[#faf7fb] px-6 py-20 md:px-10"
     >
       <div className="mx-auto max-w-6xl">
 
@@ -20,7 +20,7 @@ function Experience() {
         </div>
 
         {/* Experience Card */}
-        <div className="relative overflow-hidden rounded-2xl border border-[#eee8ee] bg-white p-7 shadow-[0_8px_30px_rgba(51,31,64,0.08)] transition-all duration-300 hover:shadow-[0_15px_40px_rgba(51,31,64,0.13)] md:p-9">
+        <div className="relative overflow-hidden rounded-2xl border border-[#eee8ee] bg-white p-7 shadow-[0_8px_24px_rgba(51,31,64,0.06)] transition-shadow duration-200 hover:shadow-[0_14px_34px_rgba(51,31,64,0.1)] md:p-9">
 
           {/* Gradient Top Border */}
           <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#7b3fc6] via-[#e92f72] to-[#ff9b5c]" />
